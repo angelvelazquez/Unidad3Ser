@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form action='/chain_length' method='POST'>
+<table>
+<p>Usa este formulario para obtener la longitud de una cadena</p>
+<tr><td>Frase o cadena:</td><td><input name='chain' type='TEXT' width='60'></td></tr>
+</table>
+<p>Cuando estes listo dale click al boton:</p>
+<p><input value='Obtener' type='SUBMIT'></p>
+</form>
+    <p><a href="/data">Ver los registros</a></p>
+{% endblock %}

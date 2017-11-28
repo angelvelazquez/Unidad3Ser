@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<p>Tu enviaste la siguiente informacion:</p>
+<table>
+<tr><td>Frase o cadena:</td><td>{{ the_chain }}</td></tr>
+</table>
+<p>La longitud de caracteres de "{{ the_chain }}" es:</p>
+<h3>{{ the_length }}</h3>
+    <p><a href="/entry">Regresar</a></p>
+{% endblock %}

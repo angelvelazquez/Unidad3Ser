@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<table>
+ <tr>
+ {% if the_data %}
+ {% for row_title in the_row_titles %}
+ <th>{{row_title}}</th>
+ {% endfor %}
+ </tr>
+ {% for fila in the_data %}
+ <tr>
+ {% for f in fila %}
+    <td>{{f}}</td>
+ {% endfor %}
+ </tr>
+ {% endfor %}
+     {% else %}
+<h3>No se encontraron resultados</h3>
+{% endif %}
+
+</table>
+    <p><a href="/entry">Regresar</a></p>
+{% endblock %}
